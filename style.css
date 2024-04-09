@@ -11,15 +11,20 @@ h2 {
 }
 .main_container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-auto-rows: 600px;
-  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 700px;
+  max-width: 1300px;
   margin: auto;
 }
 .main_container > section {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .main_container {
+    grid-template-columns: 1fr;
+  }
 }
 .logo_container {
   justify-content: space-around;
@@ -58,7 +63,7 @@ h2 {
 }
 .about_container div > img {
   border-radius: 500px;
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 .work_container {
