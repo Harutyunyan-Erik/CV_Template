@@ -193,13 +193,12 @@ h2 {
   cursor: pointer;
 }
 footer {
-  display: grid;
   max-width: 1300px;
   margin: auto;
   background-color: black;
   text-align: center;
 }
-footer > h3 {
+footer h3 {
   color: white;
   padding: 2rem;
 }
