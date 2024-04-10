@@ -52,7 +52,7 @@ h2 {
 .logo_container > div > .contact:hover {
   background-color: #795548;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .main_container {
     grid-template-columns: 1fr;
   }
@@ -195,7 +195,7 @@ h2 {
 }
 footer {
   display: grid;
-  max-width: 1300px;
+  max-height: 1300px;
   margin: auto;
   background-color: black;
   text-align: center;
