@@ -1,30 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h2{
+h2 {
     font-size: 32px;
 }
 
-.main_container{
+.main_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    // grid-template-rows: repeat(2, auto);
-    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-rows: repeat(2, 600px);
     grid-auto-rows: 600px;
-    max-width: 1000px;
-    // height: 100vh;  esi vonc haskanumem petq chi
-    margin: auto;
-    border: 5px solid red;
-    
-    >section{
-        border: 1px solid black;
+    max-width: auto;
+    margin: 0rem 2rem;
+
+    >section {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -32,11 +29,12 @@ h2{
     }
 }
 
-.logo_container{
+.logo_container {
     background-color: black;
     color: white;
-    >div{
-        >a{
+
+    >div {
+        >a {
             color: white;
             width: 300px;
             height: 40px;
@@ -49,29 +47,198 @@ h2{
             margin: 10px;
         }
     }
-    >div>a:hover{
+
+    >div>.home:hover {
         background-color: #607d8b;
+    }
+
+    >div>.work:hover {
+        background-color: #009688;
+    }
+
+    >div>.resume:hover {
+        background-color: #616161;
+    }
+
+    >div>.contact:hover {
+        background-color: #795548;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main_container {
+        grid-template-columns: 1fr;
     }
 }
 
-.about_container{
+
+.about_container {
     color: white;
     background-color: #607d8b;
-    >img{
+
+    >img {
         border-radius: 500px;
         width: 200px;
         height: auto;
     }
-
 }
 
+.work_container {
+    background-color: #f1f1f1;
+    max-width: auto;
 
-.resume_container{
+    >div {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 10px;
+
+    }
+
+    >div>img {
+        height: 150px;
+        width: 300px;
+    }
+}
+
+.resume_container {
     background-color: #3f51b5;
+
+    >h2 {
+        color: white;
+    }
+
+    >p {
+        color: white;
+    }
+
+    >table {
+        border-collapse: collapse;
+        margin: 2rem 5rem;
+    }
+
+    >table>thead>tr>th {
+        color: white;
+    }
+
+
+    >table>tbody>.one {
+        background-color: #fff;
+        height: 50px;
+        width: auto;
+    }
+
+    >table>tbody>.one>td {
+        padding: 1rem 2rem;
+    }
+
+
+    >table>tbody>.white {
+        height: 50px;
+        width: auto;
+    }
+
+    >table>tbody>.white>td {
+        padding: 1rem 2rem;
+    }
+
+
+    >table>tbody>.white {
+        height: 50px;
+        width: auto;
+    }
+
+    >table>tbody>.white>td {
+        padding: 1rem 2rem;
+    }
+
+
+    >th,
+    .resume_container td {
+        border: 1px solid #333;
+        padding: 8px;
+    }
+
+    >.resume_container th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    >.resume_container tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 }
 
+.swing_container {
+    color: white;
+    background-color: #616161;
+    text-align: center;
+}
 
+.contact_container {
+    background-color: #009688;
+}
 
+.contact_container>div {
+    >h2 {
+        font-size: 50px;
+        color: white;
+    }
 
+    >p {
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.46);
+    }
 
+    >div {
+        height: auto;
+        width: auto;
+        background: white;
+        margin: 1rem;
+    }
 
+    >div>h5 {
+        color: #333;
+        font-size: 15px;
+        padding: 0.8rem;
+    }
+
+    div>input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 50px;
+        width:  600px;
+        margin-left: 0.3rem;
+        font-size: 20px;
+    }
+    div>div{
+        text-align: right;
+    }
+    div>div>button {
+        font-size: 20px;
+        height: 40px;
+        width: 70px;
+        border: none;
+        background-color: #009688;
+        color: white;
+        margin: 1rem;
+    }
+    div>div>button:hover{
+        background-color: rgb(152, 152, 152);
+        color: black;
+        cursor: pointer;
+    }
+}
+
+footer{
+    display: grid;
+    max-width: auto;
+    margin: 0rem 2rem;
+    background-color: black;
+    text-align: center;
+    >h3{
+        color: white;
+        padding: 2rem;
+    }
+}
