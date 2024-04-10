@@ -195,7 +195,7 @@ h2 {
 }
 footer {
   display: grid;
-  max-height: 1300px;
+  max-width: 1300px;
   margin: auto;
   background-color: black;
   text-align: center;
