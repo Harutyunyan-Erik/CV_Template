@@ -38,7 +38,6 @@ h2 {
   align-items: center;
   font-size: 17px;
   transition-duration: 0.5s;
-  background-color: red;
   margin: 10px;
 }
 .logo_container > div > a:hover {
@@ -52,4 +51,7 @@ h2 {
   border-radius: 500px;
   width: 200px;
   height: auto;
+}
+.resume_container {
+  background-color: #3f51b5;
 }
