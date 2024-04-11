@@ -159,9 +159,9 @@ h2 {
 }
 .contact_container > div > div {
   height: auto;
-  max-width: 1300px;
+  max-width: 500px;
   background: white;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 .contact_container > div > div > h5 {
   color: #333;
