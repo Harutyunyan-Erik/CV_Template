@@ -159,7 +159,7 @@ h2 {
 }
 .contact_container > div > div {
   height: auto;
-  width: 70%;
+  max-width: 65%;
   background: white;
   margin: 1rem auto;
 }
